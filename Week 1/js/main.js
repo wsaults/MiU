@@ -1,6 +1,6 @@
-// Project: Deliverable 4
+// Project: Deliverable 1
 // Name: William Saults
-// Term: 0512
+// Term: 0612
 
 // Wait until the DOM is ready
 window.addEventListener("DOMContentLoaded", function() {
