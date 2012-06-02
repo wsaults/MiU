@@ -88,6 +88,10 @@ input {
 	width: 25%;
 }
 
+#browse {
+	margin: 5px 0 5px 5px;
+}
+
 .inputBox {
 	vertical-align: text-top;
 	display: inline-block;
