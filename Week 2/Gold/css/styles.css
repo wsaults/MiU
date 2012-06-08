@@ -25,6 +25,10 @@ body {
 	text-align: center;
 }
 
+span.searchword {
+	background-color: yellow;
+}
+
 #site-wrapper {
 
 }
@@ -131,7 +135,7 @@ textarea {
 }
 
 span, #errors {
-	color: red;
+/* 	color: red; */
 }
 
 #callToActionDesc {
