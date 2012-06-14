@@ -40,9 +40,9 @@ Term: 0612
 					<span>* fields are required.</span>
 					<ul id="errors"></ul>
 						<ul>
-							<li><label class="inputBox" for="itemNumber">*SKU: </label><input type="text" id="itemNumber" /></li>
-							<li><label class="inputBox" for="itemColor">Color: </label><input type="text" id="itemColor" /></li>
-							<li><label class="inputBox" for="itemPrice">*Price: </label><input type="number" id="itemPrice" /></li>
+							<li><label class="inputBox" for="itemNumber">*SKU: </label><input type="text" id="itemNumber" value="ABC123" /></li>
+							<li><label class="inputBox" for="itemColor">Color: </label><input type="text" id="itemColor" value="Brown" /></li>
+							<li><label class="inputBox" for="itemPrice">*Price: </label><input type="number" id="itemPrice" value="$12.99" /></li>
 							<li><label class="inputBox" for="quantity">*Quantity: </label><input type="range" name="slider" min="0" max="99" value="0" id="quantity" /></li>
 						</ul>
 					</fieldset>
@@ -138,10 +138,11 @@ Term: 0612
 						</div>
 					</fieldset>
 					<!-- Submit button -->
-					<input id="submit" type="submit" value="Submit" />
+					<input id="submit" type="submit" value="Submit" data-theme="b" />
 					<br /><br />
-					<input id="clearAll" type="button" value="Clear All" />
-					<input id="displayData" type="button" value="Display data" />			<input id="addNew" type="button" value="Add New Item" onClick="window.location.reload()" />
+					<input id="clearAll" type="button" value="Clear All" data-theme="a" />
+					<input id="displayData" type="button" value="Display data" />			
+					<input id="addNew" type="button" value="Add New Item" onClick="window.location.reload()" />
 				</form>
 			</div>
 		</div>
