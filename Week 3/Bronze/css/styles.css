@@ -65,6 +65,11 @@ a {
 	color: #8C4A13;
 }
 
+#newsfeed h4, a{
+	padding: 0 0 0 15px;
+	font-size: 80%;
+}
+
 fieldset {
 	border: none;
 }
