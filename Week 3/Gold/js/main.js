@@ -43,7 +43,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	function setQuantityLabel() {
 		console.log("Ran setQty");
 		var qty = $('quantity').value;
-		$('quantityLabel').value = qty;
+/* 		$('quantityLabel').value = qty; */
 	}
 	
 	function getSelectedRadio() {
@@ -202,7 +202,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	var submit = $('submit');
 	submit.addEventListener("click", validate);
 	var qtyListener = $('quantity');
-	qtyListener.addEventListener("change", setQuantityLabel);
+/* 	qtyListener.addEventListener("change", setQuantityLabel); */
 	
 	function editItem() {
 		// Grab the data from our item in local storage.
