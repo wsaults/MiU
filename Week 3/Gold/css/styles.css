@@ -4,15 +4,6 @@ Name: William Saults
 Term: 0612
 */
 
-body {
-	background-image:url('../images/wood_pattern.png');
-	background-repeat:repeat-x repeat-y;
-	font-family: Arial, Helvetica, san-serif;
-	margin: auto;
-	width: 320px;
-	color: #C57F45;
-}
-
 #navigationBar {	
 	outline: solid 1px #694425;
 	background-color: #5B2C06;
@@ -25,26 +16,7 @@ body {
 	text-align: center;
 }
 
-span.searchword {
-	background-color: yellow;
-}
-
-#site-wrapper {
-
-}
-
-#searchInput {
-	width: 240px;
-	float: left;
-	margin: 0 5px 5px 5px;
-}
-
-#searchInput a {
-	float: right;
-}
-
 h1 {
-	float: left;
 	margin: 10px 20px 10px 60px;
 }
 
@@ -64,6 +36,11 @@ a {
 #newsfeed h4, a{
 	padding: 0 0 0 15px;
 	font-size: 80%;
+}
+
+.inputHint {
+	font-size: 70%;
+	color: #AAA;
 }
 
 fieldset {
@@ -139,8 +116,8 @@ textarea {
 	display: none;
 }
 
-span, #errors {
-/* 	color: red; */
+#errors {
+	color: red;
 }
 
 #callToActionDesc {
