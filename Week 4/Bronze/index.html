@@ -16,56 +16,68 @@ Term: 0612
 		<meta name="HandheldFriendly" content="True" />
 		<meta name="MobileOptimized" content="320" />
 		
-		<script src="js/searchhi_slim.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+		
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 		<link rel="stylesheet" href="css/styles.css" />
 		<!-- Page Title-->
 		<title>Fossil inc. Items</title>
 	</head>
-	<body data-role="page">
-		<div data-role="navbar" data-iconpos="bottom">
-			<ul>
-				<li><a href="#" data-icon="home" class="ui-btn-active">Home</a></li>
-				<li><a href="additem.html" data-icon="star">Add Item</a></li>
-				<li><a href="https://github.com/wsaults/MiU.git" data-icon="check">Git Repo</a></li>
-				<li><a href="https://github.com/wsaults/MiU/tree/gh-pages" data-icon="check">gh-pages</a></li>
-			</ul>
-		</div>
-		<div id="newsfeed" data-role="content">
-				<hr />
-				<h4>Collecting memories</h4>
-				<a href="underconstruction.html">June 13, 2012</a>
-				
-				<h4>Worley lighting</h4>
-				<a href="underconstruction.html">June 12, 2012</a>
-				
-				<h4>I’ve been everywhere</h4>
-				<a href="underconstruction.html">June 12, 2012</a>
-				
-				<h4>Summer reading list</h4>
-				<a href="underconstruction.html">June 11, 2012</a>
-				<hr />
-		</div>
-		<div data-role="content">
+	<body>
+		<div>
+			<div data-role="navbar" data-iconpos="bottom">
+				<ul>
+					<li><a href="#" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="additem.html" data-icon="star">Add Item</a></li>
+					<li><a href="https://github.com/wsaults/MiU.git" data-icon="check">Git Repo</a></li>
+					<li><a href="https://github.com/wsaults/MiU/tree/gh-pages" data-icon="check">gh-pages</a></li>
+				</ul>
+			</div>
+					
+			<!-- Add Fossil Item -->
+			<header>
+				<a href="additem.html"><img src="images/calltoaction.png" alt="What are you waiting for" width="320" height="128" /></a>
+			</header>
+			<!-- Description -->
 			<div>
 				<p id="callToActionDesc">This app assists you in purchasing your favorite Fossil brand items.</p>
 			</div>
+			<div id="newsfeed">
+					<hr />
+					<h4>Collecting memories</h4>
+					<a href="underconstruction.html">June 13, 2012</a>
+					
+					<h4>Worley lighting</h4>
+					<a href="underconstruction.html">June 12, 2012</a>
+					
+					<h4>I’ve been everywhere</h4>
+					<a href="underconstruction.html">June 12, 2012</a>
+					
+					<h4>Summer reading list</h4>
+					<a href="underconstruction.html">June 11, 2012</a>
+					<hr />
+				</div>
 			<div>
 				<h3 id="browse">Shop - Browse our collections</h3>
-				<div id="Featured" data-role="collapsible">
-					<h4>Featured</h4>
-					<ul class="browseLinks">
+				<div id="Featured" data-role="content">
+					<ul class="browseLinks" data-role="listview" data-filter="true">
+						<li data-role="list-divider">
+							<img src="images/featured.png" alt="featured" />
+							<h3>Featured</h3>
+						</li>
 						<li><a href="underconstruction.html" title="New Arrivals">New Arrivals</a></li>
 						<li><a href="underconstruction.html" title="Top gifts under $50">Top gifts under $50</a></li>
 						<li><a href="underconstruction.html" title="Top gifts under $100">Top gifts under $100</a></li>
 						<li><a href="underconstruction.html" title="Top gifts under $200">Top gifts under $200</a></li>
 					</ul>
 				</div>
-				<div id="women" data-role="collapsible">
-					<h4>Women</h4>
-					<ul class="browseLinks">
+				<div id="women" data-role="content">
+					<ul class="browseLinks" data-role="listview" data-filter="true">
+						<li data-role="list-divider">
+							<img src="images/female.png" alt="female" />
+							<h3>Women</h3>
+						</li>
 						<li><a href="underconstruction.html" title="Watch Collections">Watch Collections</a></li>
 						<li><a href="underconstruction.html" title="Watch Styles">Watch Styles</a></li>
 						<li><a href="underconstruction.html" title="Clothing">Clothing</a></li>
@@ -75,12 +87,15 @@ Term: 0612
 						<li><a href="underconstruction.html" title="Shoes">Shoes</a></li>
 						<li><a href="underconstruction.html" title="Jewelry">Jewelry</a></li>
 						<li><a href="underconstruction.html" title="Accessories">Accessories</a></li>
-						<li><a href="underconstruction.html" title="Fossil Finds">Fossill Finds</a></li>
+						<li><a href="underconstruction.html" title="Fossil Finds">Fossil Finds</a></li>
 					</ul>
 				</div>
-				<div id="men" data-role="collapsible">
-					<h4>Men</h4>
-					<ul class="browseLinks">
+				<div id="men" data-role="content">
+					<ul class="browseLinks" data-role="listview" data-filter="true">
+						<li data-role="list-divider">
+							<img src="images/male.png" alt="male" />
+							<h3>Men</h3>
+						</li>
 						<li><a href="underconstruction.html" title="Watch Collections">Watch Collections</a></li>
 						<li><a href="underconstruction.html" title="Watch Styles">Watch Styles</a></li>
 						<li><a href="underconstruction.html" title="Clothing">Clothing</a></li>
@@ -89,19 +104,25 @@ Term: 0612
 						<li><a href="underconstruction.html" title="Wallets">Wallets</a></li>
 						<li><a href="underconstruction.html" title="Shoes">Shoes</a></li>
 						<li><a href="underconstruction.html" title="Accessories">Accessories</a></li>
-						<li><a href="underconstruction.html" title="Fossil Finds">Fossill Finds</a></li>
+						<li><a href="underconstruction.html" title="Fossil Finds">Fossil Finds</a></li>
 					</ul>
 				</div>
-				<div id="catalogs" data-role="collapsible">
-					<h4>Catalogs</h4>
-					<ul class="browseLinks">
+				<div id="catalogs" data-role="content">
+					<ul class="browseLinks" data-role="listview" data-filter="true">
+						<li data-role="list-divider">
+							<img src="images/catalog.png" alt="catalog" />
+							<h3>Catalogs</h3>
+						</li>
 						<li><a href="underconstruction.html" title="Current Catalog">Current Catalog</a></li>
 						<li><a href="underconstruction.html" title="Past Catalog">Past Catalog</a></li>
 					</ul>
 				</div>
-				<div id="otherSites" data-role="collapsible">
-					<h4>Other Sites</h4>
-					<ul class="browseLinks">
+				<div id="otherSites" data-role="content">
+					<ul class="browseLinks" data-role="listview" data-filter="true">
+						<li data-role="list-divider">
+							<img src="images/globe.png" alt="globe" />
+							<h3>Other Sites</h3>
+						</li>
 						<li><a href="underconstruction.html" title="Blog">Blog</a></li>
 						<li><a href="underconstruction.html" title="Find a location">Find a location</a></li>
 					</ul>
