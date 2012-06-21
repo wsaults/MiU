@@ -28,6 +28,9 @@ Term: 0612
 		<title>Fossil inc. Items</title>
 	</head>
 	<body data-role="page"> 
+		<header data-role="header" data-theme="b">
+				<h1>Fossil - Mobile</h1>
+		</header>
 		<div data-role="navbar" data-iconpos="bottom">
 				<ul>
 					<li><a href="#" data-icon="home">Home</a></li>
@@ -37,9 +40,6 @@ Term: 0612
 				</ul>
 			</div>
 		<div>
-			<header data-role="header">
-				<h1>Add Fossil Item</h1>
-			</header>
 			
 			<div data-role="content">
 				<form action="#" method="post" id="itemForm">
@@ -50,10 +50,10 @@ Term: 0612
 					<span class="inputHint">* fields are required.</span>
 					<ul id="errors"></ul>
 						<ul>
-							<li><label class="inputBox" for="itemNumber">*SKU: </label><input type="text" id="itemNumber" value="ABC123" /></li>
-							<li><label class="inputBox" for="itemColor">Color: </label><input type="text" id="itemColor" value="Brown" /></li>
-							<li><label class="inputBox" for="itemPrice">*Price: </label><input type="number" id="itemPrice" value="12.99" /></li>
-							<li><label class="inputBox" for="quantity">*Quantity: </label><input type="range" name="slider" min="0" max="99" value="0" id="quantity" /></li>
+							<li><label class="inputBox" for="itemNumber">*SKU: </label><input type="text" id="itemNumber" placeholder="ABC123" /></li>
+							<li><label class="inputBox" for="itemColor">Color: </label><input type="text" id="itemColor" placeholder="Brown" /></li>
+							<li><label class="inputBox" for="itemPrice">*Price: </label><input type="number" id="itemPrice" placeholder="12.99" /></li>
+							<li><label class="inputBox" for="quantity">*Quantity: </label><input type="range" name="slider" min="0" max="99" placeholder="0" id="quantity" /></li>
 							<li class="inputHint">Enter a quantity between 1 and 99</li>
 						</ul>
 					</fieldset>

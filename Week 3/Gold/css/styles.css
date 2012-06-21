@@ -18,17 +18,6 @@ body {
     background: url("../images/subtlenet2.png");
 }
 
-#navigationBar {	
-	outline: solid 1px #694425;
-	font-size: 8pt;
-	padding: 1px 0;
-	margin: 0 0 5px 0;
-	position: relative;
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-}
-
 h1 {
 	margin: 10px 20px 10px 60px;
 }
