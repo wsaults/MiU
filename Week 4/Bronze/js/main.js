@@ -9,8 +9,8 @@ window.addEventListener("DOMContentLoaded", function() {
 	var verifyValue,
 		giftValue = "No",
 		couponValue = "No",
-		emailValue = "No",
-		selectGroup = ["*Choose an item","Watch","Wallet","Purse"]
+		emailValue = "No"
+/* 		selectGroup = ["*Choose an item","Watch","Wallet","Purse"] */
 	;
 	
 	// getElementById Function
@@ -22,9 +22,10 @@ window.addEventListener("DOMContentLoaded", function() {
 	var errMsg = $('errors');
 	
 	function makeCats() {
-		var forTag = document.getElementsByTagName("form"),
-			selectLi = $('select')
+		var forTag = document.getElementsByTagName("form")
+/* 			selectLi = $('select') */
 			;
+/*
 			var makeSelect = document.createElement('select');
 			
 			makeSelect.setAttribute("id", "groups");
@@ -38,6 +39,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		}
 		
 		selectLi.appendChild(makeSelect);
+*/
 	}
 	
 	function setQuantityLabel() {
@@ -81,14 +83,14 @@ window.addEventListener("DOMContentLoaded", function() {
 				$('itemForm').style.display = "none";
 				$('clearAll').style.display = "inline";
 				$('displayData').style.display = "none";
-				$('addNew').style.display = "inline";
+/* 				$('addNew').style.display = "inline"; */
 				break;
 			
 			case "off":
 				$('itemForm').style.display = "block";
 				$('clearAll').style.display = "inline";
 				$('displayData').style.display = "inline";
-				$('addNew').style.display = "none";
+/* 				$('addNew').style.display = "none"; */
 				$('items').style.display = "none";
 				break;
 			
@@ -120,12 +122,14 @@ window.addEventListener("DOMContentLoaded", function() {
 			// Radio
 			item.verify = ["Verify:", verifyValue];
 			// Select
-			item.select = ["Item:", $('groups').value];
+			item.select = ["Item:", $('select').value];
 			item.textarea = ["Feedback:", $('textarea').value];
 		
 		// Save the data into local storage
 		localStorage.setItem(id, JSON.stringify(item));
-		alert("Item saved.");	
+		alert("Item saved.");
+		
+		window.location.reload();	
 	}
 	
 	function validate(e) {
@@ -150,11 +154,13 @@ window.addEventListener("DOMContentLoaded", function() {
 		var messageArray = [];
 		
 		// Group validation		
+/*
 		if(getGroup.value === "*Choose an item") {
 			var groupError = "Please choose an Item.";
-/* 			getGroup.style.border = "1px solid red"; */
+ 			getGroup.style.border = "1px solid red"; 
 			messageArray.push(groupError);
 		}
+*/
 		
 		// Item number validation
 		if(getItemNumber.value === "") {
@@ -213,11 +219,12 @@ window.addEventListener("DOMContentLoaded", function() {
 		toggleControls("off");
 		
 		// Populate the form fields with current localStorage values.
-		$('groups').value = item.select[1];
+		$('select').value = item.select[1];
 		$('itemNumber').value = item.itemNumber[1];
 		$('itemColor').value = item.itemColor[1];
 		$('itemPrice').value = item.itemPrice[1];
 		$('quantity').value = item.quantity[1];
+		$('select').value = item.select[1];
 		$('textarea').value = item.textarea[1];
 
 		// Checkboxes
@@ -361,7 +368,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	var displayData = $('displayData');
 	displayData.addEventListener("click", getData);
 	
-	makeCats();
+/* 	makeCats(); */
 	
 	setQuantityLabel();
 

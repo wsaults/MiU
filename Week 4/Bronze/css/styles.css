@@ -5,56 +5,32 @@ Term: 0612
 */
 
 body {
-	background-image:url('../images/wood_pattern.png');
-	background-repeat:repeat-x repeat-y;
-	font-family: Arial, Helvetica, san-serif;
-	margin: auto;
-	width: 320px;
-	color: #C57F45;
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+    background: url("../images/subtlenet2.png");
 }
 
-#navigationBar {	
-	outline: solid 1px #694425;
-	background-color: #5B2C06;
-	font-size: 8pt;
-	padding: 1px 0;
-	margin: 0 0 5px 0;
-	position: relative;
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-}
-
-span.searchword {
-	background-color: yellow;
-}
-
-#site-wrapper {
-
-}
-
-#searchInput {
-	width: 240px;
-	float: left;
-	margin: 0 5px 5px 5px;
-}
-
-#searchInput a {
-	float: right;
+.bgGradient {
+	background: url("../images/subtlenetGradient.png");
+	background-repeat:repeat-x;
+	padding: 60px 0 0 0;
 }
 
 h1 {
-	float: left;
 	margin: 10px 20px 10px 60px;
 }
 
 h2 {
 	font-size: 16pt;
 	text-align: center;
-}
-
-li h3 {
-	padding: 0 0 0 40px;
 }
 
 p {
@@ -68,6 +44,11 @@ a {
 #newsfeed h4, a{
 	padding: 0 0 0 15px;
 	font-size: 80%;
+}
+
+.inputHint {
+	font-size: 70%;
+	color: #AAA;
 }
 
 fieldset {
@@ -90,13 +71,6 @@ li {
 	margin: 5px 0 0 0;
 }
 
-input {
-	width: 95%;
-	height: 25px;
-	margin: 5px 0 0 -5px;
-	font-size: 16pt;
-}
-
 #quantityLabel {
 	width: 25%;
 }
@@ -114,12 +88,6 @@ input {
 
 }
 
-textarea, select, selectItem {
-	vertical-align: text-top;
-	width: 100%;
-	margin: 5px 0 0 0;
-}
-
 textarea {
 	font-size: 16pt;
 }
@@ -128,23 +96,12 @@ textarea {
 	padding: 15px 0;
 }
 
-#submit, #addNew { 
-	margin: 0 0 0 8px;
-	height: 30px;
-}
-
-#clearAll, #displayData {	
-	margin: 0 0 10px 8px;
-	width: 45%;
-	height: 30px;
-}
-
 #addNew {
 	display: none;
 }
 
-span, #errors {
-/* 	color: red; */
+#errors {
+	color: red;
 }
 
 #callToActionDesc {

@@ -18,15 +18,10 @@ body {
     background: url("../images/subtlenet2.png");
 }
 
-#navigationBar {	
-	outline: solid 1px #694425;
-	font-size: 8pt;
-	padding: 1px 0;
-	margin: 0 0 5px 0;
-	position: relative;
-	display: inline-block;
-	width: 100%;
-	text-align: center;
+.bgGradient {
+	background: url("../images/subtlenetGradient.png");
+	background-repeat:repeat-x;
+	padding: 60px 0 0 0;
 }
 
 h1 {
