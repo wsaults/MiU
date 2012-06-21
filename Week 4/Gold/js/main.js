@@ -362,14 +362,47 @@ window.addEventListener("DOMContentLoaded", function() {
 		}
 	}
 	
+	function humanTest() {
+		console.log("human");
+		$('responsiveH').style.display = "inline";
+		$('responsiveM').style.display = "none";
+		$('responsiveR').style.display = "none";
+	}
+	
+	function martianTest() {
+		console.log("martian");
+		$('responsiveH').style.display = "none";
+		$('responsiveM').style.display = "inline";
+		$('responsiveR').style.display = "none";
+	}
+	function robotTest() {
+		console.log("robot");
+		$('responsiveH').style.display = "none";
+		$('responsiveM').style.display = "none";
+		$('responsiveR').style.display = "inline";
+	}
+	
 	var clearAll = $('clearAll', clearLocalData);
 	clearAll.addEventListener("click", clearLocalData);
 
 	var displayData = $('displayData');
 	displayData.addEventListener("click", getData);
 	
+	var isHuman = $('h', humanTest);
+	isHuman.addEventListener("click", humanTest);
+	
+	var isMartian = $('m', martianTest);
+	isMartian.addEventListener("click", martianTest);
+	
+	var isRobot = $('r', robotTest);
+	isRobot.addEventListener("click", robotTest);
+	
 /* 	makeCats(); */
 	
 	setQuantityLabel();
+	
+	$('responsiveH').style.display = "none";
+	$('responsiveM').style.display = "none";
+	$('responsiveR').style.display = "none";
 
 }); // End "DOMContentLoaded" listener
