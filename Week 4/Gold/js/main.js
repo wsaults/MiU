@@ -387,12 +387,15 @@ window.addEventListener("DOMContentLoaded", function() {
 	
 	var isHuman = $('h', humanTest);
 	isHuman.addEventListener("click", humanTest);
+	isHuman.addEventListener("touchstart", humanTest);
 	
 	var isMartian = $('m', martianTest);
 	isMartian.addEventListener("click", martianTest);
+	isMartian.addEventListener("touchstart", martianTest);
 	
 	var isRobot = $('r', robotTest);
 	isRobot.addEventListener("click", robotTest);
+	isRobot.addEventListener("touchstart", robotTest);
 	
 /* 	makeCats(); */
 	

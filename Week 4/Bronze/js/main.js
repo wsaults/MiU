@@ -362,14 +362,47 @@ window.addEventListener("DOMContentLoaded", function() {
 		}
 	}
 	
+	function humanTest() {
+		$('responsiveH').style.display = "inline";
+		$('responsiveM').style.display = "none";
+		$('responsiveR').style.display = "none";
+	}
+	
+	function martianTest() {
+		$('responsiveH').style.display = "none";
+		$('responsiveM').style.display = "inline";
+		$('responsiveR').style.display = "none";
+	}
+	function robotTest() {
+		$('responsiveH').style.display = "none";
+		$('responsiveM').style.display = "none";
+		$('responsiveR').style.display = "inline";
+	}
+	
 	var clearAll = $('clearAll', clearLocalData);
 	clearAll.addEventListener("click", clearLocalData);
 
 	var displayData = $('displayData');
 	displayData.addEventListener("click", getData);
 	
+	var isHuman = $('h', humanTest);
+	isHuman.addEventListener("click", humanTest);
+	isHuman.addEventListener("touchstart", humanTest);
+	
+	var isMartian = $('m', martianTest);
+	isMartian.addEventListener("click", martianTest);
+	isMartian.addEventListener("touchstart", martianTest);
+	
+	var isRobot = $('r', robotTest);
+	isRobot.addEventListener("click", robotTest);
+	isRobot.addEventListener("touchstart", robotTest);
+	
 /* 	makeCats(); */
 	
 	setQuantityLabel();
+	
+	$('responsiveH').style.display = "inline";
+	$('responsiveM').style.display = "none";
+	$('responsiveR').style.display = "none";
 
 }); // End "DOMContentLoaded" listener

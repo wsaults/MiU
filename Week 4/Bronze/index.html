@@ -23,12 +23,25 @@ Term: 0612
 		<link rel="stylesheet" href="css/styles.css" />
 		<!-- Page Title-->
 		<title>Fossil inc. Items</title>
+		
+		<script type="text/javascript">
+			function tab1() {
+				document.getElementById('tabSrc').src = "http://m.fossil.com";
+			}
+			
+			function tab2() {
+				document.getElementById('tabSrc').src = "http://storelocator.fossil.com/fusionMap/?loc=us";
+			}
+			function tab3() {
+				document.getElementById('tabSrc').src = "https://www.fossil.com/en_US/shop/account/logon.html";
+			}
+		</script>
 	</head>
 	<body data-role="page">
 		<div data-role="navbar" data-iconpos="bottom">
 			<ul>
 				<li><a href="#" data-icon="home" class="ui-btn-active">Home</a></li>
-				<li><a href="additem.html" data-icon="star">Add Item</a></li>
+				<li><a href="additem.html" data-icon="star" data-ajax="false">Add Item</a></li>
 				<li><a href="https://github.com/wsaults/MiU.git" data-icon="check">Git Repo</a></li>
 				<li><a href="https://github.com/wsaults/MiU/tree/gh-pages" data-icon="check">gh-pages</a></li>
 			</ul>
@@ -109,6 +122,12 @@ Term: 0612
 					</ul>
 				</div>
 			</div>
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="#" onclick="tab1()" value="Shop" data-role="button">Shop</a>
+				<a href="#" onclick="tab2()" value="Locator" data-role="button">Locator</a>
+				<a href="#" onclick="tab3()" value="Account" data-role="button">Account</a>
+			</div>
+			<iframe id="tabSrc" src="http://m.fossil.com" width="300" height="300"></iframe>
 		</div>
 	</body>
 </html>  
