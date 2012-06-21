@@ -363,20 +363,17 @@ window.addEventListener("DOMContentLoaded", function() {
 	}
 	
 	function humanTest() {
-		console.log("human");
 		$('responsiveH').style.display = "inline";
 		$('responsiveM').style.display = "none";
 		$('responsiveR').style.display = "none";
 	}
 	
 	function martianTest() {
-		console.log("martian");
 		$('responsiveH').style.display = "none";
 		$('responsiveM').style.display = "inline";
 		$('responsiveR').style.display = "none";
 	}
 	function robotTest() {
-		console.log("robot");
 		$('responsiveH').style.display = "none";
 		$('responsiveM').style.display = "none";
 		$('responsiveR').style.display = "inline";
@@ -401,7 +398,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	
 	setQuantityLabel();
 	
-	$('responsiveH').style.display = "none";
+	$('responsiveH').style.display = "inline";
 	$('responsiveM').style.display = "none";
 	$('responsiveR').style.display = "none";
 
